@@ -15,7 +15,7 @@ class ServerThread(Thread):  # Creating the thread class.
             print('Ready to serve...')
             connection, addr = serverSocket.accept()  # obtaining established connection from the backlog queue.
             try:
-                message = connection.recv(2048).decode()  # decoding the message to bits.
+                message = connection.recv(1024).decode()  # decoding the message to bits.
                 filename = message.split()[1]
                 f = open(filename[1:])
 
