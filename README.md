@@ -1,2 +1,0 @@
-# Networking
-Computer Networking Assignments
